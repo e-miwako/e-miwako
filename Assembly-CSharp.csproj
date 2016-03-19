@@ -46,7 +46,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Materials\FightingUnityChan_FreeAsset\FightingUnityChan_FreeAsset\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Materials\FightingUnityChan_FreeAsset\FightingUnityChan_FreeAsset\Scripts\IdleChanger.cs" />
+     <Compile Include="Assets\Materials\FightingUnityChan_FreeAsset\FightingUnityChan_FreeAsset\Scripts\IdleChanger2.cs" />
+     <Compile Include="Assets\Materials\UnityChan\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Materials\UnityChan\Scripts\FaceUpdate.cs" />
+     <Compile Include="Assets\Materials\UnityChan\Scripts\IdleChanger.cs" />
+     <Compile Include="Assets\Materials\UnityChan\Scripts\SceneLoader.cs" />
+     <Compile Include="Assets\Materials\UnityChan\Scripts\ThirdPersonCamera.cs" />
+     <Compile Include="Assets\Materials\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
+     <Compile Include="Assets\Scripts\Room\UnityChanContrrol.cs" />
      <Compile Include="Assets\Scripts\ZombieControl.cs" />
      <None Include="Assets\Materials\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
      <None Include="Assets\Materials\FightingUnityChan_FreeAsset\FightingUnityChan_FreeAsset\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
@@ -65,6 +72,7 @@
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Asphodel\fbx_list.txt" />
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\Puppet\fbx_list.txt" />
      <None Include="Assets\Materials\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\background_list.txt" />
+     <None Include="Assets\Materials\UnityChan\license.txt" />
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F01\animation_list.txt" />
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F01\fbx_ctrl.xml" />
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F05\fbx_list.txt" />
@@ -83,6 +91,7 @@
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Arum\animation_list_a.txt" />
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\Puppet\animation_list.txt" />
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Arum\fbx_ctrl.xml" />
+     <None Include="Assets\Materials\UnityChan\Stage\Shader\AlphaMask.shader" />
      <None Include="Assets\Materials\FightingUnityChan_FreeAsset\FightingUnityChan_FreeAsset\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F01\fbx_list.txt" />
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F02\animation_list.txt" />
@@ -99,11 +108,11 @@
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Asphodel\fbx_ctrl.xml" />
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F01\animation_list_all.txt" />
      <None Include="Assets\Materials\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\Puppet\fbx_ctrl.xml" />
- <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

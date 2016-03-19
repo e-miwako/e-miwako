@@ -9,7 +9,7 @@ using System.Collections;
 // Require these components when using this script
 [RequireComponent(typeof(Animator))]
 
-public class IdleChanger : MonoBehaviour
+public class  IdleChanger2: MonoBehaviour
 {
 
 	private Animator anim;						// Animatorへの参照
