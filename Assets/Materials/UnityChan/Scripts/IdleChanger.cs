@@ -13,6 +13,7 @@ using System.Collections;
 
 public class IdleChanger : MonoBehaviour
 {
+	public GameObject chatterObject;
 	
 	private Animator anim;						// Animatorへの参照
 	private AnimatorStateInfo currentState;		// 現在のステート状態を保存する参照
@@ -58,6 +59,11 @@ public class IdleChanger : MonoBehaviour
 		{"JUMP00B",		"1.25"},
 		{"JUMP01B",		"2.02"},
 	};
+	private const string _MESSAGE_WAIT00 = "・・・";
+	private const string _MESSAGE_WAIT01 = "う〜んつっかれたぁ〜";
+	private const string _MESSAGE_WAIT02 = "♪";
+	private const string _MESSAGE_WAIT03 = "やっほ〜";
+	private const string _MESSAGE_WAIT04 = "せんぷーきゃく";
 
 
 	// Use this for initialization
@@ -147,14 +153,15 @@ public class IdleChanger : MonoBehaviour
 			if (currentState.normalizedTime > 0) {
 				yield return null;
 			}
-			int animationNo = Random.Range (13, 17);
+			int animationNo = Random.Range (8, 17);
 			if (!_isWait) {
 				animationNo = 8;
 			}
 
 			string animationName = animationList [animationNo, 0];
+			// アニメーション開始
 			anim.Play (animationName);
-
+			this.chattering (animationName);
 			if (animationName == "WAIT00") {
 				_isWait = true;
 			} 
@@ -169,7 +176,7 @@ public class IdleChanger : MonoBehaviour
 			currentState = anim.GetCurrentAnimatorStateInfo (0);
 			previousState = currentState;
 	
-
+			// 移動＆吹き出し
 			_interval = float.Parse(animationList [animationNo,1]);
 			if (isWalk) {
 				Vector3 pos = this.gameObject.transform.position;
@@ -231,5 +238,10 @@ public class IdleChanger : MonoBehaviour
 			StopCoroutine ("moveAvatar");
 			_isMove = false;
 		}
+	}
+
+	void chattering(string animationName)
+	{
+		
 	}
 }
