@@ -1,0 +1,33 @@
+# 無視するフォルダ
+Library/
+Temp/
+Obj/
+UnityGenerated/
+
+# 下階層全てのフォルダ内で
+*/.DS_Store
+*/.DS_Store?
+*/._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+
+# Visual Stadio / MonoDevelop generated
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+
+# for others
+*.log
+*.pyc
+sys info.txt
