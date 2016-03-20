@@ -13,8 +13,11 @@ using System.Collections;
 
 public class IdleChanger : MonoBehaviour
 {
-	public GameObject chatterObject;
-	
+	public GameObject chatterObject0;
+	public GameObject chatterObject1;
+	public GameObject chatterObject2;
+	public GameObject chatterObject3;
+
 	private Animator anim;						// Animatorへの参照
 	private AnimatorStateInfo currentState;		// 現在のステート状態を保存する参照
 	private AnimatorStateInfo previousState;	// ひとつ前のステート状態を保存する参照
