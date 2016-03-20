@@ -53,6 +53,8 @@
      <Compile Include="Assets\Materials\UnityChan\Scripts\SceneLoader.cs" />
      <Compile Include="Assets\Materials\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\Materials\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
+     <Compile Include="Assets\Scripts\BtnCamera.cs" />
+     <Compile Include="Assets\Scripts\HealthControl.cs" />
      <Compile Include="Assets\Scripts\Room\UnityChanContrrol.cs" />
      <Compile Include="Assets\Scripts\ZombieControl.cs" />
      <None Include="Assets\Materials\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
