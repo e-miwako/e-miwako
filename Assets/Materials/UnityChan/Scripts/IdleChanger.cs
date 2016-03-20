@@ -17,6 +17,7 @@ public class IdleChanger : MonoBehaviour
 	public GameObject chatterObject1;
 	public GameObject chatterObject2;
 	public GameObject chatterObject3;
+	public GameObject chatterObject4;
 
 	private Animator anim;						// Animatorへの参照
 	private AnimatorStateInfo currentState;		// 現在のステート状態を保存する参照
@@ -175,6 +176,28 @@ public class IdleChanger : MonoBehaviour
 			if (animationName.IndexOf ("WALK") >= 0) {
 				isWalk = true;
 			}
+//			this.chatterObject0.SetActive (false);
+//			this.chatterObject1.SetActive (false);
+//			this.chatterObject2.SetActive (false);
+//			this.chatterObject3.SetActive (false);
+//			this.chatterObject4.SetActive (false);
+//			if (animationName == "WAIT00") {
+//				this.chatterObject0.SetActive (true);
+//			}
+//			else if (animationName == "WAIT01") {
+//				this.chatterObject1.SetActive (true);
+//			}
+//			else if (animationName == "WAIT02") {
+//				this.chatterObject2.SetActive (true);
+//			}
+//			else if (animationName == "WAIT03") {
+//				this.chatterObject3.SetActive (true);
+//			}
+//			else if (animationName == "WAIT04") {
+//				this.chatterObject4.SetActive (true);
+//			}
+
+
 
 			currentState = anim.GetCurrentAnimatorStateInfo (0);
 			previousState = currentState;
